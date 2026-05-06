@@ -1,0 +1,5 @@
+apiVersion: v2
+name: dclaw-email
+description: "DClaw Email — Smart inbox, auto-reply & scheduling"
+version: 0.1.0
+appVersion: 0.1.0
