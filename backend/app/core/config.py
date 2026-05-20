@@ -1,20 +1,25 @@
-from pydantic_settings import BaseSettings
 from functools import lru_cache
+
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    app_name: str = "DClaw App"
+    app_name: str = "DClaw Mail"
     app_env: str = "dev"
     debug: bool = True
 
-    database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/dclaw_app"
+    # Local dev uses the shared dclaw-postgres Docker container exposed on host port 5435.
+    # CI / docker-compose backend service overrides this via DATABASE_URL env var.
+    database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5435/dclaw_email"
 
     secret_key: str = "change-me-in-production"
     access_token_expire_minutes: int = 60
 
-    class Config:
-        env_file = ".env"
-        case_sensitive = False
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        case_sensitive=False,
+        extra="ignore",
+    )
 
 
 @lru_cache()
