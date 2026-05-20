@@ -1,5 +1,11 @@
-# DClaw Email — v1.2 Feature Roadmap
+# DClaw Email — v1.2 Feature Roadmap (🗄️ SUPERSEDED)
 
+> ⛔ **THIS PLAN IS RETIRED.** See [`PLAN-v1.3.md`](./PLAN-v1.3.md) for the active roadmap.
+>
+> Why retired: v1.2 described a marketing-automation product (Mailchimp/listmonk class) which conflicts with `REVISED-PRD.md` v2.3, the authoritative product spec (DClaw Mail = Superhuman-class productivity inbox). Resolution is documented in `PLAN-v1.3.md` §0 and §7.
+>
+> The content below is preserved for historical reference only.
+>
 > 📘 **REVISED PRD v2.3 available:** See `REVISED-PRD.md` for complete gap analysis, current state, and full feature roadmap.
 
 

@@ -1,0 +1,18 @@
+{
+  "main": {
+    "id": "root",
+    "type": "split",
+    "children": [
+      {
+        "id": "knowledge-index-leaf",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": { "file": "KNOWLEDGE-INDEX.md", "mode": "preview" }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "active": "knowledge-index-leaf"
+}
