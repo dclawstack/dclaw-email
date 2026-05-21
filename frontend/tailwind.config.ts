@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss"
 
 const config: Config = {
-  darkMode: ["class"],
+  darkMode: "media" as const,
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-poppins)", "system-ui", "-apple-system", "Segoe UI", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -43,11 +46,27 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        brand: {
+          DEFAULT: "#7660A8",
+          hover: "#5C4A8E",
+          press: "#4A3878",
+          soft: "#F1EEF8",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        xl: "1.5rem",
+        "2xl": "2rem",
+        pill: "999px",
+      },
+      boxShadow: {
+        xs: "0 1px 2px rgba(15,15,18,0.04)",
+        sm: "0 2px 6px rgba(15,15,18,0.06)",
+        md: "0 8px 20px rgba(15,15,18,0.08)",
+        lg: "0 18px 40px rgba(15,15,18,0.10)",
+        brand: "0 12px 28px rgba(118,96,168,0.28)",
       },
     },
   },

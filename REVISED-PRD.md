@@ -25,8 +25,8 @@ status: Future
 | **Tagline** | Smart inbox |
 | **Color** | #3B82F6 |
 | **Phase** | Future |
-| **Port (Frontend Dev)** | 3092 (TBD — assign before build) |
-| **Port (Backend Dev)** | 18162 (TBD — assign before build) |
+| **Port (Frontend Dev)** | 3022 |
+| **Port (Backend Dev)** | 8022 |
 | **Maturity Tier** | 🟡 Tier 2 — Partial |
 
 ---

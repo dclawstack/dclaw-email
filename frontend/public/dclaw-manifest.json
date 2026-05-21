@@ -1,0 +1,26 @@
+{
+  "id": "email",
+  "name": "DClaw Mail",
+  "category": "Email",
+  "tagline": "Smart inbox — turn every email into a tracked next action",
+  "color": "#7660A8",
+  "version": "1.0.0",
+  "ports": {
+    "backend": 8022,
+    "frontend": 3022
+  },
+  "health": {
+    "backend": "http://localhost:8022/health/",
+    "frontend": "http://localhost:3022/"
+  },
+  "api_base": "/api/v1",
+  "database": "dclaw_email",
+  "icon": "/icon.svg",
+  "features": [
+    "unified-inbox",
+    "ai-copilot",
+    "smart-filters",
+    "templates",
+    "keyboard-first"
+  ]
+}
